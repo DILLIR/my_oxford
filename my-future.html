@@ -1,0 +1,93 @@
+
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8">
+		<title>Мій персональний Оксфорд</title>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link rel="shortcut icon" href="img/Oxford-University-Circlet.svg" type="image/png">
+		<link rel="stylesheet" href="css/normalize.css">
+		<link rel="stylesheet" href="css/animate.css">
+		<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;700&display=swap" rel="stylesheet">
+		<link rel="stylesheet" href="css/style.css">
+	</head>
+	<body>
+		<div class="container grid">
+			<header class="header grid-header">
+				<div class="logo"></div>
+				<ul class="menu">
+					<li class="menu-item"><a class="links1" href="index.html">Головна</a></li>
+					<li class="menu-item"><a class="links1" href="future.html">Світ майбутнього</a></li>
+					<li class="menu-item"><a class="links1" href="test.html">Навичка навчання</a></li>
+					<li class="menu-item"><a class="links2" href="howtolern.html">Вчимось вчитись</a></li>
+					<li class="menu-item"><a class="links2" href="never_stop_learning.html">Never stop learning</a></li>
+					<li class="menu-item"><a class="links2" href="my-future.html">Моя програма</a></li>
+				</ul>
+				<div class="menu-button">≡ Menu</div>
+				<ul class="submenu">
+					<li class="submenu-item menu-button">×</li>
+					<li class="submenu-item"><a class="links1" href="index.html">Головна</a></li>
+					<li class="submenu-item"><a class="links1" href="future.html">Світ майбутнього</a></li>
+					<li class="submenu-item"><a class="links1" href="test.html">Навичка навчання</a></li>
+					<li class="submenu-item"><a class="links2" href="howtolern.html">Вчимось вчитись</a></li>
+					<li class="submenu-item"><a class="links2" href="never_stop_learning.html">Never stop learning</a></li>
+					<li class="submenu-item"><a class="links2" href="my-future.html">Моя програма</a></li>
+				</ul>
+			</header>
+			<div class="main my-future-photo">
+				<h1>Моя програма</h1>
+				<img src="img/my_oxford_(1).png" alt="">
+			</div>
+			<div class="my-program">
+				<h2 class="my-program-heading">Syoma`s program</h2>
+				<div class="my-program-container">
+					<ul class="my-program-list">
+						<li class="my-program-item"><a href="https://odesseo.com.ua/chto-takoe-mikrorazmetka/">HTML5 > Мікророзмітка</a></li>
+						<li class="my-program-item"><a href="https://sass-lang.com/guide">CSS3 > Sass, Less</a></li>
+						<li class="my-program-item"><a href="https://html5book.ru/vvedenie-v-jquery/">JS > jQuery</a></li>
+						<li class="my-program-item"><a href="https://getbootstrap.com/docs/4.0/layout/grid/">BOOTSTRAP4 > Grid</a></li>
+						<li class="my-program-item"><a href="https://uk.wordpress.org/">WORDPRESS > Back-end settings</a></li>
+						<li class="my-program-item"><a href="https://netpeak.net/ru/blog/11-etapov-seo-prodvizheniya-saita/">Web-developer > SEO</a></li>
+					</ul>
+				</div>
+				<h2 class="my-program-heading">Kozoriz`s program</h2>
+				<div class="my-program-container">
+					<ul class="my-program-list kozoriz">
+						<li class="my-program-item"><a href="http://easy-code.com.ua/2010/11/recept-vivchennya-veb-dizajnu/">Досконало вивчити веб дизайн</a></li>
+						<li class="my-program-item"><a href="https://codeguida.com/post/715">Вивчити Python</a></li>
+						<li class="my-program-item"><a href="https://developer.mozilla.org/uk/docs/Learn/JavaScript">Вивчити JS</a></li>
+						<li class="my-program-item"><a href="https://www.brainy.com.ua/course_python.html">Створити власну гру на Python</a></li>
+					</ul>
+				</div>
+				<h2 class="my-program-heading">Kantyrak`s program</h2>
+				<div class="my-program-container">
+					<ul class="my-program-list kanturak">
+						<li class="my-program-item"><a href="https://websunsea.github.io/html/les01.html">HTML5</a></li>
+						<li class="my-program-item"><a href="https://developer.mozilla.org/uk/docs/Learn/Getting_started_with_the_web/CSS_basics">CSS3</a></li>
+						<li class="my-program-item"><a href="https://purecodecpp.com/uk/">C++</a></li>
+						<li class="my-program-item"><a href="https://getbootstrap.com/">BOOTSTRAP4</a></li>
+						<li class="my-program-item"><a href="https://phpbuilder.ru/ua/learn">PHP</a></li>
+						<li class="my-program-item"><a href="https://codeguida.com/post/715">Pyton</a></li>
+					</ul>
+				</div>	
+			</div>
+		</div>
+		<footer class="footer">
+				Школа комп'ютерної майстерності, 2020 
+		</footer>
+		<script src="js/menu.js"></script>
+		<script> 
+			var my_program_heading = document.querySelectorAll(".my-program-heading");
+			var my_program_container = document.querySelectorAll(".my-program-container");
+			for (var i = 0; i < my_program_heading.length; i++){
+				setBlock(my_program_container[i],my_program_heading[i]);
+			}
+			function setBlock (container,heading){
+				heading.addEventListener('click', function (){
+				 container.style.transition = "all 3s";
+				 container.classList.toggle("block");
+				});
+			}
+		</script>
+	</body>
+</html>
