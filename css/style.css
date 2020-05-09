@@ -617,6 +617,9 @@ form input[type="radio"]{
 		order: -1;
 		grid-area: main;
 	}
+	.learning-text{
+		padding: 10px;
+	}
 	.main-test{
 		grid-area: sidebar;
 		text-align: center;
